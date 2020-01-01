@@ -24,4 +24,5 @@ def directors_totals(nds)
     
     entries +=1
   end
+  result
 end
