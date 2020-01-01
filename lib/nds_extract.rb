@@ -14,13 +14,14 @@ def directors_totals(nds)
   #
 
   entries = 0 
-  while entries < nds.length do
-    nds.each {|director_hash| 
-      director_hash[:movies].each {|title_hash|
-        total += title_hash[:worldwide_gross]}
-    result[:director_hash[:name]] = "#{total}"
-    }
+  while entries < nds.length do 
+      key = nds[entries][:name]
+      value = 0
+      nds[entries][:movies].each {|x|
+        value += x[:worldwide_gross]}
+      puts "#{key} => #{value}" 
     
-    result
+    
+    entries +=1
   end
 end
