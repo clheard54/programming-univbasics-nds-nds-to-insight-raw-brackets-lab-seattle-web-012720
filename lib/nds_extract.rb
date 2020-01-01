@@ -19,7 +19,7 @@ def directors_totals(nds)
       value = 0
       nds[entries][:movies].each {|x|
         value += x[:worldwide_gross]}
-      result[:"#{key}"] = "#{value}" 
+      puts "#{key} => #{value}" 
     
     
     entries +=1
