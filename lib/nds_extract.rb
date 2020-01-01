@@ -16,7 +16,7 @@ def directors_totals(nds)
   entries = 0 
   while entries < nds.length do
     nds.each {|director_hash| 
-      
+      director_hash[:movies].each {|
       result[:director_hash[:name]] = "#{total}"
   
   # Use loops, variables and the accessing method, [], to loop through the NDS
