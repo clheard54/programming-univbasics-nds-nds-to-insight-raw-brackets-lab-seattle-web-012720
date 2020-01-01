@@ -12,6 +12,12 @@ def directors_totals(nds)
   result = {
   }
   #
+  loop thru each entry in original array (looping thru a bunch of hashes)
+  entries = 0 
+  while entries < nds.length do
+    directors_database.each {|director_hash| 
+      puts "#{director_hash[:name]} => #{total}"
+  
   # Use loops, variables and the accessing method, [], to loop through the NDS
   # and total up all the
   # ...
